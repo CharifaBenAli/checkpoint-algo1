@@ -1,0 +1,19 @@
+ALGORITHM checkpoint1
+VAR
+    c: CHAR := ''
+        nb_char , nb_vowel, nb_word : INTEGER :=0
+BEGIN
+    WHILE(c <> '.') DO 
+    Write("enter a character");
+    Read(c);
+    nb_char :=nb_char + 1;
+    IF (
+        c ='a' OR c ='e' OR  c ='i' c ='o'  c ='u'  c ='y'
+    )
+    THEN
+    nb_vowel:=nb_vowel+1;
+    END_IF
+    IF(c='' OR c='.' AND nb_word >2) THEN nb_word:=nb_word+1
+    END_WHILE
+
+END
